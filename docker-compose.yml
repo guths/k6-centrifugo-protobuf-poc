@@ -1,0 +1,13 @@
+services:
+  centrifugo:
+    image: centrifugo/centrifugo:v6
+    volumes:
+      - ./centrifugo-config.json:/centrifugo/config.json
+    command: centrifugo -c config.json
+    ports:
+      - 8000:8000
+    mem_limit: 1G
+    cpus: 1
+    cap_add:
+      - SYS_RESOURCE
+    
