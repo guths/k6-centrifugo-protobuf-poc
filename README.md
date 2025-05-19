@@ -13,8 +13,7 @@ docker compose up -d
 
 # Protobuf Centrifugo K6
 ``` bash
-# Run the test
-k6 run --env CENTRIFUGO_WS_URL="ws://localhost:8000/connection/websocket" \      105 ✘ │ 20.19.2  │ 11:08:03  
+k6 run --env CENTRIFUGO_WS_URL="ws://localhost:8000/connection/websocket" \
        --summary-export=summary.json \
        --env JWT_SECRET=bbe7d157-a253-4094-9759-06a8236543f9 \
        --env EXTRA_CHANNELS_AMOUNT=0 \
